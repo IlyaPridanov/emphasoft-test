@@ -1,0 +1,27 @@
+@mixin hover() {
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+
+        text-decoration: underline;
+
+        opacity: 0.6;
+    }
+}
+
+@mixin list() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin btn() {
+    @include hover();
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    outline: none;
+}

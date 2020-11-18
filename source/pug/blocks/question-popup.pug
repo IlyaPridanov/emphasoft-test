@@ -1,0 +1,20 @@
+section.question-popup.hidden
+    .question-popup__row.container
+        .question-popup__column
+            h2.question-popup__caption.h2 Копите не только на&nbsp;пенсию
+            p.question-popup__text.slide-text Участвуйте в специальной программе для молодых сотрудников, занятых инновационной деятельностью, и накопите на крупные финансовые цели - первоначальный взнос по ипотеке, автомобиль или образование.
+            p.question-popup__text.slide-text Узнайте подробности в отделе кадров
+        .question-popup__column
+            .question-popup__img-row
+                img(src="img/darma-2.svg", alt="darma-2")
+                img(src="img/car.png", alt="car")
+            p.question-popup__text.question-popup__text--right.slide-text
+                |Татнефть предлагает помощь в формировании капитала на крупные финансовые цели.
+                |Получить капитал (собственные взносы + взносы работодателя + инвестиционный доход) можно будет уже через 5 лет.
+                button.question-popup__btn-text.js-btn-toggle-text(type="button" data-text="popup")
+                    img(src="img/question-circle.png", alt="question")
+            p.question-popup__text.question-popup__text--right.slide-text.js-toggle-text(data-text="popup")
+                |А можно продолжить формировать капитал и воспользоваться этими деньгами позже или даже оставить до назначения пенсии.
+    button.question-popup__btn-close(type="button" aria-label="close popup")
+        svg(width="17" height="17" fill="none")
+            use(xlink:href="#icon-close")

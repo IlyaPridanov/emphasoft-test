@@ -1,0 +1,148 @@
+.code {
+    padding-top: 81px;
+    padding-bottom: 38px;
+}
+
+.code__caption {
+    margin-bottom: 66px;
+
+    line-height: 1.05;
+
+    &--bottom {
+        margin-bottom: 30px;
+    }
+}
+
+.code__text {
+    &--top {
+        margin-bottom: 70px;
+    }
+
+    &--bottom {
+        margin-bottom: 61px;
+    }
+}
+
+.code__list {
+    @include list ();
+
+    &--bottom {
+        margin-bottom: 39px;
+    }
+}
+
+.code__item {
+    position: relative;
+    margin-bottom: 44px;
+    padding-left: 38px;
+
+    max-width: 100%;
+    width: 810px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 15px;
+
+        display: block;
+        width: 8px;
+        height: 8px;
+
+        border-radius: 50%;
+        background-color: $primary-color-3;
+    }
+
+    &--bottom {
+        margin-bottom: 30px;
+        line-height: 1.4;
+    }
+}
+
+.code__link {
+    display: block;
+    margin-bottom: 8px;
+}
+
+@media(max-width:$tablet-width) {
+    .code {
+        padding-top: 82px;
+    }
+
+    .code__caption {
+        margin-bottom: 57px;
+
+        &--bottom {
+            margin-bottom: 53px;
+        }
+    }
+
+    .code__link {
+        margin-right: 115px;
+        margin-bottom: 35px;
+    }
+
+    .code__text {
+        margin-right: 15px;
+
+        line-height: 1.15;
+        letter-spacing: 0.007rem;
+
+        &--bottom {
+            margin-bottom: 83px;
+        }
+    }
+
+    .code__list--bottom {
+        margin-bottom: 44px;
+    }
+
+    .code__item {
+        margin-bottom: 63px;
+
+        &--bottom {
+            margin-bottom: 66px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .code__link {
+        margin-right: 150px;
+    }
+}
+
+@media(max-width:$mobile-width) {
+    .code {
+        padding: 55px 0;
+    }
+
+    .code__caption {
+        margin-bottom: 25px;
+    }
+
+    .code__item {
+        padding-left: 0;
+        margin-bottom: 30px;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .code__text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .code__link {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .code__list--bottom {
+        margin-bottom: 0;
+    }
+}

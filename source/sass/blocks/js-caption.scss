@@ -1,0 +1,12 @@
+.js-caption {
+    position: relative;
+    right: -200%;
+
+    transition: $transition;
+
+    &-active {
+        right: 0;
+
+        transition: $transition;
+    }
+}

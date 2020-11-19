@@ -1,0 +1,21 @@
+.popup {
+    @include hover();
+    position: fixed;
+    bottom: 3px;
+    right: 33px;
+    display: block;
+    height: 53px;
+    width: 53px;
+    padding: 0;
+
+    background-color: #06d6d6;
+    border: 1px solid #1367d9;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 0px grey;
+}
+
+@media(max-width:$tablet-width) {
+    .popup {
+        display: none;
+    }
+}

@@ -1,0 +1,157 @@
+.footer {
+    padding: 60px 0 58px;
+
+    background-color: $primary-color-1;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__column {
+    &--row {
+        margin-right: 35px;
+        margin-left: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-grow: 0.8;
+    }
+
+    &--column {
+        flex-grow: 0.2;
+    }
+}
+
+.footer__link {
+    @include hover();
+
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer__text {
+    margin: 0;
+    margin-bottom: 5px;
+
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: $accent-color-2;
+
+    &--size {
+        font-size: 17px;
+    }
+
+    &--time {
+        font-size: 16px;
+        letter-spacing: 0.01rem;
+    }
+}
+
+.footer__tel-link {
+    @include hover();
+
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 5px;
+
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1;
+    color: $white;
+
+    &--size {
+        // margin-bottom: 17px;
+        margin-top: 0;
+
+        font-size: 26px;
+    }
+
+    & span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+
+        border-radius: 50%;
+        background-color: $secondary-color-4;
+    }
+}
+
+.footer__link {
+    display: block;
+    margin-bottom: 13px;
+
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    color: $white;
+}
+
+.footer__list {
+    @include list();
+    margin-top: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__item {
+    margin-left: 20px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.footer__social-link {
+    @include hover();
+}
+
+@media(max-width:$desktop-width) {
+    .footer__column {
+        &--row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        &--column {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .footer {
+        padding: 56px 0 24px;
+    }
+
+    .footer__text--time,
+    .footer__text--size,
+    .footer__list,
+    .footer__tel-link,
+    .footer__link {
+        display: none;
+    }
+
+    .footer__row {
+        display: block;
+    }
+
+    .footer__text {
+        margin-left: 15px;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}

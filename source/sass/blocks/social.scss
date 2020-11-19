@@ -1,0 +1,142 @@
+.social {
+    padding-top: 64px;
+    padding-bottom: 56px;
+}
+
+.social__text {
+    margin: 0;
+    margin-bottom: 75px;
+    width: 690px;
+    max-width: 100%;
+
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: $primary-color-1;
+}
+
+.social__list {
+    @include list();
+
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(auto, 311px));
+    grid-auto-rows: minmax(55px, auto);
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+}
+
+.social__item {
+    position: relative;
+
+    padding-left: 70px;
+
+    & img,
+    & svg {
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+}
+
+.social__link {
+    font-size: 18px;
+}
+
+@media(max-width:$desktop-width) {
+    .social__list {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .social {
+        padding-top: 88px;
+        padding-bottom: 46px;
+    }
+
+    .social__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social__text {
+        margin-bottom: 96px;
+
+        font-size: 25px;
+        line-height: 1.15;
+    }
+
+    .social__item {
+        padding-left: 115px;
+        margin-bottom: 81px;
+        margin-right: 75px;
+
+        & svg,
+        & img {
+            left: 16px;
+            transform: scale(1.7);
+        }
+
+        &:nth-child(1) {
+            order: 1;
+        }
+
+        &:nth-child(2) {
+            order: 4;
+        }
+
+        &:nth-child(3) {
+            order: 6;
+        }
+
+        &:nth-child(4) {
+            order: 2;
+        }
+
+        &:nth-child(5) {
+            order: 5;
+        }
+
+        &:nth-child(6) {
+            order: 7;
+        }
+
+        &:nth-child(7) {
+            order: 3;
+        }
+    }
+
+    .social__link {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:$mobile-width) {
+    .social {
+        padding: 55px 0;
+    }
+
+    .social__text {
+        font-size: 20px;
+    }
+
+    .social__item{
+        padding-left: 0;
+        margin-bottom: 25px;
+        margin-right: 0;
+
+        & img,
+        & svg {
+            display: none;
+        }
+    }
+
+    .social__text {
+        margin-bottom: 30px;
+    }
+
+    .social__link {
+        font-size: 22px;
+    }
+}

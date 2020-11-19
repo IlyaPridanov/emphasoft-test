@@ -3,14 +3,23 @@ $ubuntu: "Ubuntu", "Arial", sans-serif;
 $black: #333333;
 $white: #ffffff;
 
-$primary-color: #393e6b;
+$primary-color-1: #393e6b;
+$primary-color-2: #74757b;
+$primary-color-3: #3b4269;
 
-$secondary-color: #89AEFF;
+$secondary-color-1: #2cd3b8;
+$secondary-color-2: #3fd6bc;
+$secondary-color-3: #0da088;
+$secondary-color-4: #68cdbc;
 
-$transition: all 0.5s ease-in;
+$accent-color-1: #eff4f4;
+$accent-color-2: #c2b8b1;
+
+$transition: all 0.8s ease-in;
+
+$mobile-width: 500px;
 
 $tablet-width: 900px;
-
 $desktop-width: 1250px;
 
 $retina-dpi: 144dpi;

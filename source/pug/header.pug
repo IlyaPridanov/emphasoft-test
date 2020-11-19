@@ -1,24 +1,24 @@
 header.header
     .container.header__row
-        .header__column
-            .header__column
+        .header__column.js-block.js-block-inactive
+            ul.header__list
+                li.header__item
+                    a.header__link(href="#") Вход
+                li.header__item
+                    a.header__link(href="#") Регистрация
+            nav.header__nav
                 ul.header__list
-                    li.header__item
-                        a.header__link(href="#") Вход
-                    li.header__item
-                        a.header__link(href="#") Регистрация
-                nav.header__nav
-                    ul.header__list
-                        li.header__nav-item
-                            a.header__link(href="#") Возможности
-                        li.header__nav-item
-                            a.header__link(href="#") Тарифы
-                        li.header__nav-item
-                            a.header__link(href="#") Партнёрам
-                        li.header__nav-item
-                            a.header__link(href="#") Помощь
-            a.header__logo(href="index.html")
-                img(src="img/logo.png", alt="logo")
+                    li.header__nav-item
+                        a.header__link(href="#") Возможности
+                    li.header__nav-item
+                        a.header__link(href="#") Тарифы
+                    li.header__nav-item
+                        a.header__link(href="#") Партнёрам
+                    li.header__nav-item
+                        a.header__link(href="#") Помощь
+        a.header__logo(href="index.html")
+            img(src="img/logo.png", alt="logo")
+        .header__hamburger-block
             button.header__hamburger.hamburger(type="button")
                 span.hamburger__bar.hamburger__bar--bar1
                 span.hamburger__bar.hamburger__bar--bar2

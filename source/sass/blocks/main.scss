@@ -1,0 +1,16 @@
+.main__section {
+    overflow-x: hidden;
+    padding-left: 15.4vw;
+
+    background-color: $white;
+
+    &:nth-child(2n-1) {
+        background-color: $accent-color-1;
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .main__section {
+        padding-left: 0;
+    }
+}

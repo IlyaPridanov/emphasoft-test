@@ -1,0 +1,25 @@
+.section-text {
+    margin: 0;
+
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary-color-2;
+    letter-spacing: 0.025em;
+}
+
+
+@media(max-width:$tablet-width) {
+    .section-text {
+        font-size: 25px;
+        line-height: 1.45;
+    }
+}
+
+@media(max-width:$mobile-width) {
+    .section-text {
+        font-size: 22px;
+    }
+}
+

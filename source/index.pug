@@ -4,7 +4,7 @@ html(lang="ru")
         meta(charset="utf-8")
         meta(content="width=device-width, initial-scale=1" name="viewport")
         meta(name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
-        title nnpf-kpp
+        title emphasoft-test
         link(rel="stylesheet" href="css/style.min.css")
     body
         <div style="display:none">
@@ -13,4 +13,13 @@ html(lang="ru")
 
         include pug/header.pug
         main.main
+            include pug/blocks/basic.pug
+            include pug/blocks/setup.pug
+            include pug/blocks/code-1.pug
+            include pug/blocks/code-2.pug
+            include pug/blocks/after.pug
+            include pug/blocks/social.pug
+        include pug/footer.pug
+        button.popup(type="button")
+            img(src="img/popup.png", alt="popup")
         script(src='js/script.min.js')

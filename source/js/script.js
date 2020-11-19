@@ -2,3 +2,4 @@
 
 // Modules
 //= modules/nav.js
+//= modules/caption.js

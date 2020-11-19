@@ -1,0 +1,152 @@
+.after {
+    padding-top: 67px;
+    padding-bottom: 70px;
+}
+
+.after__caption {
+    margin-bottom: 20px;
+}
+
+.after__list {
+    @include list();
+    margin-bottom: 100px;
+}
+
+.after__item {
+    position: relative;
+
+    padding-left: 110px;
+    margin-bottom: 80px;
+
+    & svg {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.after__text-top {
+    margin-bottom: 80px;
+}
+
+.after__text {
+    margin: 0;
+
+    font-family: $ubuntu;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: $primary-color-1;
+
+    & span {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+    }
+}
+
+.after__btn-list {
+    @include list();
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.after__btn-item {
+    margin-right: 20px;
+}
+
+.after__button {
+    &--color {
+        background-color: $primary-color-3;
+    }
+}
+
+@media(max-width:$tablet-width) {
+    .after {
+        padding-top: 80px;
+        padding-bottom: 99px;
+    }
+
+    .after__caption {
+        margin-bottom: 45px;
+    }
+
+    .after__text-top {
+        line-height: 1.2;
+        margin-bottom: 95px;
+    }
+
+    .after__item {
+        padding-left: 145px;
+        margin-bottom: 113px;
+
+        & svg {
+            top: 80%;
+            left: 14px;
+            transform: scale(1.4) translateY(-50%);
+        }
+    }
+
+    .after__text {
+        font-size: 25px;
+        line-height: 1.15;
+
+        & span {
+            font-size: 25px;
+        }
+    }
+
+    .after__btn-item {
+        margin-right: 0;
+        margin-bottom: 32px;
+        width: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .after__list {
+        margin-bottom: 136px;
+    }
+}
+
+@media(max-width:$mobile-width) {
+    .after {
+        padding: 55px 0;
+    }
+
+    .after__item {
+        padding-left: 0;
+
+        & svg {
+            display: none;
+        }
+    }
+
+    .after__text{
+        font-size: 20px;
+
+        & span {
+            font-size: 20px;
+        }
+    }
+
+    .after__text-top {
+        margin-bottom: 30px;
+    }
+
+    .after__item {
+        margin-bottom: 35px;
+    }
+
+    .after__list {
+        margin-bottom: 45px;
+    }
+}

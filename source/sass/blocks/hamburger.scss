@@ -6,9 +6,10 @@
 
 .hamburger__bar {
     padding: 0;
-    width: 30px;
+    // width: 30px;
+    width: 100%;
     height: 4px;
-    background-color: $primary-color;
+    background-color: $secondary-color-2;
     display: block;
     border-radius: 4px;
     transition: all 0.4s ease-in-out;
@@ -22,7 +23,9 @@
 
 .hamburger__bar--bar2,
 .hamburger__bar--bar3 {
-    top: 13.5px;
+    // top: 13.5px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hamburger__bar--bar3 {
@@ -39,26 +42,32 @@
 .js-btn-active {
     .hamburger__bar--bar1 {
         transform: rotate(45deg);
-        height: 3px;
-        width: 42px;
+        // height: 3px;
+        // width: 42px;
+        width: 100%;
+        height: 5px;
     }
 
     .hamburger__bar--bar3 {
         display: inline;
         transform: rotate(45deg);
-        height: 3px;
+        // height: 3px;
+        height: 5px;
         background-color: transparent;
     }
 
     .hamburger__bar--bar2 {
         transform: rotate(-45deg);
-        height: 3px;
+        // height: 3px;
+        height: 5px;
         background-color: transparent;
     }
 
     .hamburger__bar--bar4 {
         transform: rotate(-45deg);
-        height: 3px;
-        width: 42px;
+        // height: 3px;
+        height: 5px;
+        // width: 42px;
+        width: 100%;
     }
 }
